@@ -24,7 +24,7 @@ class _CounterAppState extends State<CounterApp> {
             onPressed: decrement,
             child: Icon(Icons.remove),
           ),
-          PrimaryBadge(child: Text(_count.toString()).h1()),
+          Text(_count.toString()).h1(),
           PrimaryButton(
             shape: ButtonShape.circle,
             onPressed: increment,
