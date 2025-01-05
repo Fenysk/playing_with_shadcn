@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:playing_with_shadcn/counter_app.dart';
+import 'package:shadcn_flutter/shadcn_flutter.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,11 +10,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return ShadcnApp(
+      title: 'My App',
+      home: CounterApp(),
+      theme: ThemeData(
+        colorScheme: ColorSchemes.darkZinc(),
+        radius: 0.7,
       ),
     );
   }
